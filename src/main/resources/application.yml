@@ -1,0 +1,16 @@
+server:
+  port: 9999
+
+spring:
+  application:
+    name: config-service
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:  # 로컬 파일 시스템에 있는 파일을 읽어온다는 뜻
+          search-locations: file:///Users/ssol/Documents/config/
+        # git으로 config 저장소를 사용할 때
+#        git:
+#          uri: https://github.com/emsthf/styleguide.git  # 클론할 때 사용하는 그 uri
