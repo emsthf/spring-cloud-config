@@ -34,3 +34,5 @@
 - MSA로 구성된 여러 서비스에서 Config 서버를 통해 설정 값을 가져오도록 설정
 - 해당 config를 사용하는 모든 서비스에 한번에 적용시킬 수 있다.
 - 노출되면 안되는 config 값을 외부에 저장할 수 있다.
+- @EnableConfigServer 어노테이션을 사용하여 Config 서버로 사용할 수 있다.
+- config를 사용하는 서버에선 따로 어노테이션을 사용할 필요 없이 bootstrap.yml에 설정만 해주면 된다.(bootstrap.yml은 application.yml보다 먼저 로딩된다.)
